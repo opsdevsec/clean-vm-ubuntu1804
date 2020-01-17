@@ -2,7 +2,7 @@
 sudo apt -y update
 sudo apt -y dist-upgrade
 sudo apt -y autoremove
-sudo apt -y install open-vm-tools qemu-guest-agent
+sudo apt -y install open-vm-tools qemu-guest-agent cloud-init
 sudo systemctl stop rsyslog
 if [ -f /var/log/wtmp ]; then
     truncate -s0 /var/log/wtmp
